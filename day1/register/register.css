@@ -381,3 +381,17 @@ ul {
 }
 
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(0, 0, 0);
+  opacity: 0.5; /* Firefox */
+}
+
+/* pASSWORD VALIDATION */
+
+
+
+#password-strength-status {padding: 1px 10px;color: #000000; border-radius:4px;margin-top:5px;}
+.medium-password{background-color: #E4DB11;border:#BBB418 1px solid;}
+.weak-password{background-color: #FF6600;border:#AA4502 1px solid;}
+.strong-password{background-color: #12CC1A;border:#0FA015 1px solid;}
+

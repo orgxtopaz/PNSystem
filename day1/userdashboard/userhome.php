@@ -1,3 +1,15 @@
+
+
+<!-- IF USER DIDNT LOG IN SUCCESSFULLY THEN CONDITION BELOW IS TRUE -->
+<?php
+session_start();
+if(!isset($_SESSION['email'])){
+    header('location:/pnsystem/day1/landingpage.php');
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -106,7 +118,7 @@
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar  ftco-navbar-light" id="ftco-navbar" style="color:black;">
             <div class="container">
-                <a class="navbar-brand" href="index.html" style="color: black;"> MIZADA <span>Shoppe</span></a>
+                <a class="navbar-brand" href="#" style="color: black;"> MIZADA <span>Shoppe</span></a>
                 <form action="#" class="searchform order-sm-start order-lg-last">
                     <div class="form-group d-flex">
                         <input type="text" class="form-control pl-3" placeholder="Search">
@@ -119,7 +131,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav m-auto">
-                        <li class="nav-item active"><a href="#" class="nav-link">User</a></li>
+                        <li class="nav-item active"><a href="/pnsystem/day1/userdashboard/newlandingpage.php" class="nav-link">Home</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black;">Page</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -178,6 +190,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"> <span class="fa fa-user pe-2"></span> Hello Jhon</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pnsystem/day1/logout.php"> <span class="fa fa-user pe-2"></span> Log Out</a>
                     </li>
                 </ul>
             </div>
@@ -643,8 +659,12 @@
 
                     });
                 </script>
-                <?php
+<?php
 include_once('connection.php');
+
+
+
+
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }

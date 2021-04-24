@@ -1,3 +1,14 @@
+<!-- IF LOG OUT IS CLICK THEN THE THE CONDITION BELOW IS TRUE -->
+<?php
+session_start();
+if(!isset($_SESSION['email'])){
+    header('location:/pnsystem/day1/landingpage.php');
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 
@@ -7,21 +18,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MIZADA Shoppe</title>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="/pnsystem/day1/dist/css/style.css">
     <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <link rel = "icon" href = 
+"https://www.edigitalagency.com.au/wp-content/uploads/Instagram-igtv-logo-circle-png-transparent.png" 
+        type = "image/x-icon">
+
 
 
     <!-- HEADER LINKS  -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="header/style.css">
+    <link rel="stylesheet" href="/pnsystem/day1/header/style.css">
 
 
-    <script src="header/jquery.min.js"></script>
-    <script src="header/popper.js"></script>
-    <script src="header/bootstrap.min.js"></script>
-    <script src="header/main.js"></script>
+    <script src="/pnsystem/day1/header/jquery.min.js"></script>
+    <script src="/pnsystem/day1/header/popper.js"></script>
+    <script src="/pnsystem/day1/header/bootstrap.min.js"></script>
+    <script src="/pnsystem/day1/header/main.js"></script>
 
     <!-- END -->
 
@@ -54,9 +70,9 @@
     <!-- Bootstrap core CSS -->
     <!-- <link rel="stylesheet" href="product/boostrap.min.css"> -->
     <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="product/mdb-pro.min.css">
+    <link rel="stylesheet" href="/pnsystem/day1/product/mdb-pro.min.css">
     <!-- Material Design Bootstrap Ecommerce -->
-    <link rel="stylesheet" href="product/mdb.ecommerce.min.css">
+    <link rel="stylesheet" href="/pnsystem/day1/product/mdb.ecommerce.min.css">
     <!-- TRENDING BOOSTRAP -->
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'>
 
@@ -73,6 +89,14 @@
     <section class="ftco-section">
         <div class="wrap">
             <div class="container">
+
+
+           
+
+ 
+
+
+
                 <div class="row justify-content-between">
                     <div class="col">
                         <p class="mb-0 phone"><span class="fa fa-phone" style="color: white;"></span> <a href="#">+00
@@ -100,7 +124,7 @@
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar  ftco-navbar-light" id="ftco-navbar" style="color:black;">
             <div class="container">
-                <a class="navbar-brand" href="index.html" style="color: black;"> MIZADA <span>Shoppe</span></a>
+                <a class="navbar-brand" href="#" style="color: black;"> MIZADA <span>Shoppe</span></a>
                 <form action="#" class="searchform order-sm-start order-lg-last">
                     <div class="form-group d-flex">
                         <input type="text" class="form-control pl-3" placeholder="Search">
@@ -115,17 +139,15 @@
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black;">Page</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black;">Account</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown04">
-                                <a class="dropdown-item" href="#">Page 1</a>
-                                <a class="dropdown-item" href="#">Page 2</a>
-                                <a class="dropdown-item" href="#">Page 3</a>
-                                <a class="dropdown-item" href="#">Page 4</a>
+                                <a class="dropdown-item" href="/pnsystem/day1/userdashboard/userhome.php">Dashboard</a>
+                             
                             </div>
                         </li>
-                        <li class="nav-item"><a href="#" class="nav-link" style="color:black;">Sign In</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link" style="color:black;">Login</a></li>
+                        
                         <li class="nav-item"><a href="#" class="nav-link" style="color:black;">Admin</a></li>
+                        <li class="nav-item"><a href="/pnsystem/day1/logout.php" class="nav-link" style="color:black;">Log Out</a></li>
                     </ul>
                 </div>
             </div>
@@ -817,6 +839,56 @@
     </div>
 
     <script src="dist/js/main.min.js"></script>
+
+    <script>
+
+
+// $("#myModal").on
+
+
+
+
+$(".forgot").on("click",function(){
+    $("#myModal").modal('hide');
+
+})
+
+
+// $(".forgotbutton").on("click",function(){
+
+
+
+//     if(forgotemail !=""){
+//         $("#forgotpassword").modal('hide');
+       
+//     }
+
+
+
+// })
+
+$("#confirmation").modal('hide');
+
+$(".requestpassword").on("click",function(){
+    var forgotemail =$(".forgotemail").val();
+    
+    if(forgotemail!=""){
+        $("#forgotpassword").modal('hide');
+        
+        $("#confirmation").modal('show');
+
+    }
+
+
+
+})
+
+
+
+
+</script>
 </body>
 
 </html>
+
+

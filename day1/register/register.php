@@ -2,9 +2,34 @@
 <html lang="en">
 
 <head>
+
+    <!-- HEADER LINKS  -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../header/style.css">
+    <link rel="stylesheet" href="../admindashboard/admin.css">
+
+
+    <script src="../header/jquery.min.js"></script>
+    <script src="../header/popper.js"></script>
+    <script src="../header/bootstrap.min.js"></script>
+    <script src="../header/main.js"></script>
+
+    <!-- END -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizada | Sign Up</title>
+    <!-- add icon link -->
+    <link rel = "icon" href = 
+"https://www.edigitalagency.com.au/wp-content/uploads/Instagram-igtv-logo-circle-png-transparent.png" 
+        type = "image/x-icon">
+
+
+    <!-- SIGN UP LINKS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
@@ -16,22 +41,96 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="backup.css">
+    <link rel="stylesheet" href="register.css">
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <title>Register</title>
+
+    <!-- END -->
 </head>
 
 <body>
-    <div class="container-fluid px-2 px-md-4 py-5 mx-auto">
+
+
+    <section class="ftco-section">
+        <div class="wrap">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <p class="mb-0 phone"><span class="fa fa-phone" style="color: white;"></span> <a href="#">+00
+                                1234 567</a></p>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <div class="social-media">
+                            <p class="mb-0 d-flex">
+                                <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                        class="fa fa-envelope"><i class="sr-only">Facebook</i></span></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><span
+                                        class="fa fa-credit-card"><i class="sr-only">Twitter</i></span></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-link	
+
+                                        "><i class="sr-only">Instagram</i></span></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-truck
+                                        "><i class="sr-only">Dribbble</i></span></a>
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar  ftco-navbar-light" id="ftco-navbar" style="color:black;">
+            <div class="container">
+                <a class="navbar-brand" href="/pnsystem/day1/landingpage.php" style="color: black;"> MIZADA <span>Shoppe</span></a>
+                <form action="" class="searchform order-sm-start order-lg-last">
+                    <div class="form-group d-flex">
+                        <input type="text" class="form-control pl-3" placeholder="Search">
+                        <button type="submit" placeholder="" class="form-control search"><span
+                                class="fa fa-search"></span></button>
+                    </div>
+                </form>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item "><a href="/pnsystem/day1/landingpage.php" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black;">Page</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown04">
+                                <a class="dropdown-item" href="#">Page 1</a>
+                                <a class="dropdown-item" href="#">Page 2</a>
+                                <a class="dropdown-item" href="#">Page 3</a>
+                                <a class="dropdown-item" href="#">Page 4</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active"><a href="#" class="nav-link" style="color:black;">Sign Up</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" style="color:black;">Login</a></li>
+                        <li class="nav-item "><a href="#" class="nav-link" style="color:black;">Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+
+
+
+    <!-- SIGN UP -->
+
+
+    <div class="container px-2 px-md-4 py-5 mx-auto">
         <div class="card card0 border-0">
             <div class="row d-flex">
                 <div class="col-lg-5">
                     <div class="card1 pb-5">
                         <div class="row">
-                            <h5 style="margin-left: -5px;" class="logo"><u>M I Z A D A &nbsp; PH</u></h5>
+                            <!-- <h5 style="margin-left: -5px;" class="logo"><u>M I Z A D A &nbsp; PH</u></h5> -->
+
                         </div>
                         <div class="row justify-content-center mt-4 mb-5">
                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -52,9 +151,11 @@
                                         <hr width="50%">
                                         <p class="content mt-2 mb-0">A Passerelles Numeriques Scholar, currently
                                             studying at
-                                            University of San Carlos Talamban Campus Cebu City. He has a lot of background 
-                                            about the functionalities of a web. He is involved in the most famous social 
-                                            media currently which is the facebook. Because of his experi, he is one of the backend
+                                            University of San Carlos Talamban Campus Cebu City. He has a lot of
+                                            background
+                                            about the functionalities of a web. He is involved in the most famous social
+                                            media currently which is the facebook. Because of his experi, he is one of
+                                            the backend
                                             developer propect in this year.</p>
                                     </div>
                                     <div class="carousel-item card border-0 card-0">
@@ -63,11 +164,15 @@
                                         <h6 class="font-weight-bold mt-5">John Miguel Estopa</h6> <small
                                             class="mb-2">UI/UX Designer</small>
                                         <hr width="50%">
-                                        <p class="content mt-2 mb-0">A Passerelles Numeriques scholar, currently studying 
-											at University of San Carlos Talamban Campus Cebu City,Philippines as a graduating
-											student. He is very talented in terms of graphic designing. He is also involve in designing 
-											the landing page of many porn sites. Because of his experiences, he is also one of the 
-											frontend developer prospect in this year.</p>
+                                        <p class="content mt-2 mb-0">A Passerelles Numeriques scholar, currently
+                                            studying
+                                            at University of San Carlos Talamban Campus Cebu City,Philippines as a
+                                            graduating
+                                            student. He is very talented in terms of graphic designing. He is also
+                                            involve in designing
+                                            the landing page of many porn sites. Because of his experiences, he is also
+                                            one of the
+                                            frontend developer prospect in this year.</p>
                                     </div>
                                     <div class="carousel-item active card border-0 card-0">
                                         <div class="text-center"> <img src="elsa1.png" class="img-fluid profile-pic">
@@ -125,22 +230,32 @@
                         <h3 class="mb-1">Sign up:</h3>
                         <p class="mb-4 text-sm">Create new account and SHOP NOW!</p>
 
-                        <form action="" method="POST">
-                            <div class="row mt-3">
+                        <form action="registerprocess.php"  method="POST">
+                          
                                 <div class="col-md-6"> <label class="mb-0">
                                         <h6 class="mb-0 text-sm">First Name</h6>
-                                    </label> <input type="text" name="firstname" placeholder="Dave Lyndrex"> </div>
-                                <div class="col-md-6"> <label class="mb-0">
-                                        <h6 class="mb-0 text-sm">Last Name</h6>
-                                    </label> <input type="text" name="lastname" placeholder="Da Ve"> </div>
-                            </div>
-                            <div class="row px-3"> <label class="mb-0">
+                                    </label> <input type="text" name="firstname" placeholder="Letters only" required
+                                        pattern="[A-Za-z]+" class="firstname"> </div>
+                           
+                            <div class="col-md-6"> <label class="mb-0">
+                                <h6 class="mb-0 text-sm">Last Name</h6>
+                            </label> <input type="text" name="lastname" placeholder="Letters only" required class="lastname"
+                                pattern="[A-Za-z]+"> </div>
+                            <div class="col-md-6"> <label class="mb-0">
                                     <h6 class="mb-0 text-sm">Email Address</h6>
-                                </label> <input type="text" name="email" placeholder="davelyndrex@email.com"> </div>
-                            <div class="row px-3"> <label class="mb-0">
+                                </label> <input type="email" name="email" placeholder="ex.davelyndrex@email.com" required class="email"> </div>
+                            <div class="col-md-6" name="frmCheckPassword" id="frmCheckPassword"> <label class="mb-0">
                                     <h6 class="mb-0 text-sm">Password</h6>
-                                </label> <input type="password" name="password"
-                                    placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                                </label> 
+                                <input type="password" name="password" id="password" class="demoInputBox password"  required onKeyUp="checkPasswordStrength();" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" /><div id="password-strength-status"></div>
+
+                            </div>
+                            <div id="password-strength-status"></div>
+
+
+                            <div class="col-md-6"> <label class="mb-0">
+                                    <h6 class="mb-0 text-sm">Image Url Profile</h6>
+                                </label> <input type="text" name="image" placeholder="Image Link Url" required class="image">
                             </div>
                             <div class="row px-3 mb-3"> <small class="text-muted">By signing up, you agree our <a
                                         href="" class="text-primary">Terms of services</a> and <a href=""
@@ -148,7 +263,7 @@
                             <div class="row mb-4">
                                 <div class="col-md-6">
                                     <button type="submit" name="submit"
-                                        class="btn btn-blue text-center mb-1 py-2">Create Account</button>
+                                        class="btn btn-blue text-center mb-1 py-2 createaccount">Create Account</button>
                                 </div>
                             </div>
                         </form>
@@ -279,53 +394,107 @@
                 </div>
             </div>
         </div>
-        <div class="copyright-area">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 text-center">
-                    <div class="copyright-text">
-                        <p>Copyright &copy; 2021, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a>
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
+     
     </footer>
 
-    <?php 
-    include "process.php";
+
+
+
+
+
+
+
+
     
-    // if the form's submit button is clicked, we need to process the form
-        if (isset($_POST['submit'])) {
-            // get variables from the form
-            $firstname = $_POST['firstname'];
-            $lastname = $_POST['lastname'];
-            $email = $_POST['email'];
-            $password = $_POST['password'];
-       
-       
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script>
+
+
     
-            //write sql query
+        $(document).ready(function () {
+
+            //  $(".createaccount").on("click", function () {
+
+                
+
+            //     var fn= $(".firstname").val();
+            //     var ln= $(".lastname").val();
+            //     var e= $(".email").val();
+            //     var p= $(".password").val();
+            //     var i=  $(".image").val();
+
+            //     if(fn!=""&&ln!=""&&e!=""&&p!=""&&i!=""){
+            //         alert("QWrqwr");
+            //      window.location.href = '/pnsystem/day1/landingpage.php';
+
+
+
+            //    }
+
+
+
+
+
+            // // // });
+
+
+            // PASSWORD VALIDATION
+
+
+
+
+
+
+
+
+
+            
+
+
+        })
+    })
+    </script>
+  
+
+
+<!-- PASSWORD STRENGTHEN VALIDATION -->
+
+<script type="text/javascript">
+
+
+
+
+    function checkPasswordStrength() {
+        var number = /([0-9])/;
+        var alphabets = /([a-zA-Z])/;
+        var special_characters = /([~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<])/;
     
-            $sql = "INSERT INTO `users`(`firstname`, `lastname`, `email`, `password`) VALUES ('$firstname','$lastname','$email','$password')";
-    
-            // execute the query
-    
-            $result = $conn->query($sql);
-    
-            if ($result == TRUE) {
-          
-                header ("location: admin.php");
-            }else{
-                echo "Error:". $sql . "<br>". $conn->error;
+        if($('#password').val().length<6) {
+            $('#password-strength-status').removeClass();
+            $('#password-strength-status').addClass('weak-password');
+            $('#password-strength-status').html("Weak (should be atleast 6 characters.)");
+        } else {
+            if($('#password').val().match(number) && $('#password').val().match(alphabets) && $('#password').val().match(special_characters)) {
+                $('#password-strength-status').removeClass();
+                $('#password-strength-status').addClass('strong-password');
+                $('#password-strength-status').html("Strong");
+            } else {
+                $('#password-strength-status').removeClass();
+                $('#password-strength-status').addClass('medium-password');
+                $('#password-strength-status').html("Medium (should include alphabets, numbers and special characters.)");
             }
-    
-            $conn->close();
-    
         }
-    
-    ?>
+    }
+    </script>
+
+
+
+    <!-- END -->
+
+
+
 
 </body>
 

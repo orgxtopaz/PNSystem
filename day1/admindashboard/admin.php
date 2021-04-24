@@ -31,7 +31,7 @@
 <body>
 
 <?php 
-include "process.php";
+include "../connection.php";
 //write the query to get data from users table
 $sql = "SELECT * FROM users";
 $result = $conn->query($sql);
